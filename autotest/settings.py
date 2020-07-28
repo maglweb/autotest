@@ -1,3 +1,4 @@
+# -*-coding:utf-8-*-
 """
 Django settings for autotest project.
 
@@ -27,6 +28,12 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+INSTALLED_APPS = (
+    # ...
+    "bootstrap4",
+    'django_forms_bootstrap',
+    # ...
+)
 
 # Application definition
 
@@ -38,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'apitest',
+    'product',
 ]
 
 MIDDLEWARE = [

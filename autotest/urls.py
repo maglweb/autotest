@@ -1,3 +1,4 @@
+# -*-coding:utf-8-*-
 """autotest URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -16,10 +17,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from apitest import views
+#from product import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    #path('test/',views.test),
+   # path('test/',views.test),
     path('login/',views.login),
     path('home/',views.home),
+    path('logout/',views.login),
+    path('product_manage/',views.product_manage)
+    #path('product_manage/',views.product_manage)
 ]

@@ -1,18 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<html lang="en">
 <head>
     <meta charset="UTF-8" content="text/html" http-equiv="content-type">
-    <title>Home</title>
+    <title>自动化测试平台</title>
 </head>
 <body>
-    <h1>Home</h1>
-    <form method="get" action="/Home/">
-{#        {% csrf_token %}#}
-{#        <br><input name="username" type="text" placeholder="username">#}
-{#        <br><input name="password" type="password" placeholder="password">#}
-{#        {{ error }}<br>#}
-{#        <br><button id="submit" type="submit">submit</button>#}
-        Welcome
-    </form>
+    <ul class="nav navbar-nav navbar-right">
+        <li>欢迎您，<a href="#">{{ user }}</a></li>
+        <li><a href="/logout/">退出</a></li>
+    </ul>
 </body>
 </html>
